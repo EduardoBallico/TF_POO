@@ -1,0 +1,21 @@
+Consultar cobrança mensal:
+	
+	Individual:
+		Gerenciador pega acessos do usuario ativo e Filtra por mês
+		Pega o valor dos entretenimentos atrelados aos acessos
+		Verifica se o cliente é vinculado a empresa:
+			divide por 2
+			mostra valor cheio
+		
+	Empresa:
+		Gerenciador pega acessos do usuario ativo e Filtra por mês
+		Pega o valor dos entretenimentos atrelados aos acessos
+		Guarda o valor
+		--
+		Pega os colaboradores da empresa ativa
+		Para cada colaborador, filtra os acessos e guarda num arrayzão
+		Pega o valor dos entretenimentos atrelados aos acessos do arrayzão
+		Divide o valor por 2
+		Guarda o valor
+		--
+		Soma os dois valores guardados
