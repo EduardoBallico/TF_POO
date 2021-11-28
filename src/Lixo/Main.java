@@ -1,6 +1,6 @@
 package Lixo;
 
-import Lixo.forms.modelo;
+import Lixo.forms.*;
 
 public class Main {
 
@@ -8,8 +8,10 @@ public class Main {
 
 	public static void main(String[] args) {
 		//carrega dados de arquivo
-		modelo.exibir(args);
+		modeloXML.exibir();
 	}
+
+
 
 	public static void iniciar(){
 
