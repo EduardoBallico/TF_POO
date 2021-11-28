@@ -18,8 +18,8 @@ import javafx.scene.paint.Color;
 
 public class modelo extends Application {
 
-    public static void exibir(String[] args) {
-        launch(args);
+    public static void exibir() {
+        launch();
     }
 
     @Override
