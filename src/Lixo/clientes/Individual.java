@@ -1,4 +1,4 @@
-package clientes;
+package Lixo.clientes;
 
 public class Individual extends Cliente {
 

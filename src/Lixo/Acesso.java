@@ -1,5 +1,7 @@
-import clientes.Cliente;
-import entretenimento.Entretenimento;
+package Lixo;
+
+import Lixo.clientes.Cliente;
+import Lixo.entretenimento.Entretenimento;
 
 import java.util.Date;
 

@@ -1,3 +1,5 @@
+package Lixo;
+
 public class Main {
 
 	private Gerenciador gerenciador;

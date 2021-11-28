@@ -1,3 +1,4 @@
+package Lixo;
 
 public class BancoDeDados {
 

@@ -1,4 +1,4 @@
-package clientes;
+package Lixo.clientes;
 
 import java.util.LinkedList;
 
