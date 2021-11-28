@@ -1,11 +1,10 @@
 package entretenimento;
 
-import java.util.Calendar;
+import java.util.*;
 
 public class Serie extends Entretenimento {
 
 	private Calendar anoConclusao;
-
-	private Episodio episodio;
+	private LinkedList<Episodio> episodios;
 
 }
