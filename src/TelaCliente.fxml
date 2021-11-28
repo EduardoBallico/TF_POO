@@ -52,22 +52,22 @@
          <children>
             <Pane fx:id="PanelCriarUsuario" layoutX="1.0" layoutY="-1.0" prefHeight="478.0" prefWidth="200.0">
                <children>
-                  <TextField layoutX="24.0" layoutY="116.0" promptText="Nome do usuário" />
-                  <Label layoutX="19.0" layoutY="50.0" text="Criar novo usuário" textAlignment="CENTER">
+                  <TextField layoutX="14.0" layoutY="101.0" prefHeight="26.0" prefWidth="171.0" promptText="Nome do usuário" />
+                  <Label layoutX="19.0" layoutY="29.0" text="Criar novo usuário" textAlignment="CENTER">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <PasswordField layoutX="24.0" layoutY="163.0" promptText="Senha" />
-                  <CheckBox layoutX="24.0" layoutY="227.0" mnemonicParsing="false" text="Conta empresarial" />
-                  <Pane layoutY="267.0" prefHeight="212.0" prefWidth="200.0" visible="false">
+                  <PasswordField layoutX="14.0" layoutY="148.0" prefHeight="26.0" prefWidth="171.0" promptText="Senha" />
+                  <CheckBox layoutX="24.0" layoutY="201.0" mnemonicParsing="false" text="Conta empresarial" />
+                  <Pane layoutY="252.0" prefHeight="212.0" prefWidth="200.0">
                      <children>
-                        <TextField layoutX="14.0" layoutY="30.0" prefWidth="149.0" promptText="CNPJ" />
-                        <TextField layoutX="14.0" layoutY="80.0" prefWidth="149.0" promptText="Nome Fantasia" />
+                        <TextField layoutX="14.0" layoutY="30.0" prefHeight="26.0" prefWidth="171.0" promptText="CNPJ" />
+                        <TextField layoutX="14.0" layoutY="80.0" prefHeight="26.0" prefWidth="171.0" promptText="Nome Fantasia" />
                         <Button layoutX="61.0" layoutY="143.0" mnemonicParsing="false" text="Criar conta" />
                      </children>
                   </Pane>
-                  <Pane layoutY="267.0" prefHeight="212.0" prefWidth="200.0">
+                  <Pane layoutY="252.0" prefHeight="212.0" prefWidth="200.0" visible="false">
                      <children>
                         <Button layoutX="60.0" layoutY="149.0" mnemonicParsing="false" text="Criar conta" />
                         <CheckBox layoutX="20.0" layoutY="63.0" mnemonicParsing="false" text="Vinculado a empresa?" />
@@ -80,17 +80,17 @@
             <Pane layoutX="200.0" layoutY="-2.0" prefHeight="474.0" prefWidth="200.0">
                <children>
                   <Line endX="-99.0" endY="544.0" layoutX="100.0" layoutY="-64.0" startX="-100.0" startY="66.00000762939453" />
-                  <Label layoutX="55.0" layoutY="39.0" prefHeight="30.0" prefWidth="88.0" text="Cadastrar" textAlignment="CENTER">
+                  <Label layoutX="55.0" layoutY="20.0" prefHeight="30.0" prefWidth="88.0" text="Cadastrar" textAlignment="CENTER">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <Label layoutX="31.0" layoutY="66.0" prefHeight="30.0" prefWidth="139.0" text="entretenimento" textAlignment="CENTER">
+                  <Label layoutX="31.0" layoutY="45.0" prefHeight="30.0" prefWidth="139.0" text="entretenimento" textAlignment="CENTER">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <ComboBox layoutX="8.0" layoutY="116.0" promptText="Tipo de Entretenimento">
+                  <ComboBox layoutX="7.0" layoutY="101.0" promptText="Tipo de Entretenimento">
                      <opaqueInsets>
                         <Insets />
                      </opaqueInsets>
@@ -135,32 +135,46 @@
             <Pane layoutX="400.0" prefHeight="478.0" prefWidth="200.0">
                <children>
                   <Line endX="-100.0" endY="548.4000244140625" layoutX="100.0" layoutY="-65.0" startX="-100.0" startY="51.499969482421875" />
-                  <Label layoutX="58.0" layoutY="36.0" prefHeight="30.0" prefWidth="88.0" text="Consultar" textAlignment="CENTER">
+                  <Label layoutX="58.0" layoutY="20.0" prefHeight="30.0" prefWidth="88.0" text="Consultar" textAlignment="CENTER">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <Label layoutX="28.0" layoutY="66.0" prefHeight="30.0" prefWidth="149.0" text="acessos mensais" textAlignment="CENTER">
+                  <Label layoutX="28.0" layoutY="45.0" prefHeight="30.0" prefWidth="149.0" text="acessos mensais" textAlignment="CENTER">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <ComboBox layoutX="8.0" layoutY="115.0" prefHeight="28.0" prefWidth="185.0" promptText="Mês desejado">
+                  <ComboBox layoutX="8.0" layoutY="101.0" prefHeight="28.0" prefWidth="185.0" promptText="Mês desejado">
                      <opaqueInsets>
                         <Insets />
                      </opaqueInsets>
                   </ComboBox>
-                  <ComboBox layoutX="8.0" layoutY="157.0" prefHeight="28.0" prefWidth="185.0" promptText="Ano desejado">
+                  <ComboBox layoutX="8.0" layoutY="141.0" prefHeight="28.0" prefWidth="185.0" promptText="Ano desejado">
                      <opaqueInsets>
                         <Insets />
                      </opaqueInsets>
                   </ComboBox>
-                  <ListView layoutY="207.0" prefHeight="200.0" prefWidth="200.0" />
+                  <ListView layoutX="8.0" layoutY="214.0" prefHeight="257.0" prefWidth="185.0" />
+                  <Button layoutX="64.0" layoutY="176.0" mnemonicParsing="false" text="Consultar" />
                </children>
             </Pane>
             <Pane layoutX="600.0" prefHeight="466.0" prefWidth="200.0">
                <children>
                   <Line endX="-100.0" endY="489.4000244140625" layoutX="100.0" layoutY="-11.0" startX="-100.0" startY="11.000005722045898" />
+                  <Label layoutX="66.0" layoutY="20.0" prefHeight="30.0" prefWidth="70.0" text="Simular" textAlignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="45.0" prefHeight="30.0" prefWidth="139.0" text="Carga de dados" textAlignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="15.0" layoutY="101.0" prefHeight="26.0" prefWidth="171.0" promptText="Nome do arquivo" />
+                  <ListView layoutX="8.0" layoutY="180.0" prefHeight="292.0" prefWidth="185.0" />
+                  <Button layoutX="70.0" layoutY="143.0" mnemonicParsing="false" text="Simular" />
                </children>
             </Pane>
          </children>
