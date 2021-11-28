@@ -32,20 +32,31 @@
   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lixo.forms.modeloXML">
+<VBox prefHeight="449.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
   <children>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="600.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
          <children>
-            <Pane fx:id="lixo" prefHeight="400.0" prefWidth="217.0">
+            <Pane fx:id="PanelCriarUsuario" layoutY="2.0" prefHeight="466.0" prefWidth="200.0">
                <children>
-                  <TextField fx:id="btnTeste" alignment="TOP_LEFT" layoutX="34.0" layoutY="68.0" onMouseClicked="#confirma" promptText="Nome do Cliente" />
+                  <TextField layoutX="24.0" layoutY="85.0" promptText="Nome do usuário" />
+                  <Label layoutX="43.0" layoutY="42.0" text="Criar novo usuário">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="24.0" layoutY="132.0" promptText="Senha" />
                </children>
             </Pane>
+            <Pane layoutX="200.0" layoutY="-2.0" prefHeight="474.0" prefWidth="200.0" />
+            <Pane layoutX="400.0" layoutY="-5.0" prefHeight="474.0" prefWidth="200.0" />
+            <Pane layoutX="600.0" prefHeight="466.0" prefWidth="200.0" />
          </children>
     </AnchorPane>
   </children>

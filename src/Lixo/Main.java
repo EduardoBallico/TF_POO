@@ -8,10 +8,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		//carrega dados de arquivo
-		modeloXML.exibir();
+		TelaCliente.exibir();
 	}
-
-
 
 	public static void iniciar(){
 

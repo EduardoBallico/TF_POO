@@ -52,7 +52,7 @@ public class Admin extends Application {
         cadastraCliente.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {
-                modelo.exibir();
+
             }
         });
         cadastraEntretenimento.setOnAction(new EventHandler<ActionEvent>() {

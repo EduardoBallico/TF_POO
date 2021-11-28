@@ -25,16 +25,10 @@ public class modeloXML extends Application {
         stage.show();
     }
 
-    @FXML
-    public Pane lixo;
-
-    @FXML
-    public Button btnTeste;
 
     @FXML
     public void confirma(ActionEvent actionEvent) {
         System.out.println("Alo!");
-        btnTeste.setText("Mudou!!!");
     }
 
     public static void exibir(){

@@ -8,8 +8,6 @@ public class Empresarial extends Cliente {
 
 	private String nomeFantasia;
 
-	private Cliente cliente;
-
 	private LinkedList<Individual> colaboradores;
 
 }

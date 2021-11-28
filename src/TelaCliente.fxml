@@ -46,23 +46,6 @@
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="600.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
          <children>
-            <Pane fx:id="PanelCriarUsuario" layoutY="2.0" prefHeight="474.0" prefWidth="200.0">
-               <children>
-                  <TextField layoutX="24.0" layoutY="85.0" promptText="Nome do usuário" />
-                  <Label layoutX="43.0" layoutY="42.0" text="Criar novo usuário">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <CheckBox layoutX="24.0" layoutY="180.0" mnemonicParsing="false" text="Conta empresarial" />
-                  <PasswordField layoutX="24.0" layoutY="126.0" promptText="Senha" />
-                  <Pane fx:id="PanelContaEmpresarial" layoutY="237.0" prefHeight="238.0" prefWidth="200.0" visible="false">
-                     <children>
-                        <TextField layoutX="24.0" layoutY="40.0" promptText="CNPJ" />
-                     </children>
-                  </Pane>
-               </children>
-            </Pane>
             <Pane layoutX="200.0" layoutY="-2.0" prefHeight="474.0" prefWidth="200.0">
                <children>
                   <Line endX="-100.0" endY="538.4000244140625" layoutX="100.0" layoutY="-64.0" startX="-100.0" startY="66.00000762939453" />
@@ -76,6 +59,23 @@
             <Pane layoutX="600.0" prefHeight="466.0" prefWidth="200.0">
                <children>
                   <Line endX="-100.0" endY="483.8000183105469" layoutX="100.0" layoutY="-11.0" startX="-100.0" startY="11.000005722045898" />
+               </children>
+            </Pane>
+            <Pane fx:id="PanelCriarUsuario" layoutX="1.0" layoutY="2.0" prefHeight="474.0" prefWidth="200.0">
+               <children>
+                  <TextField layoutX="24.0" layoutY="85.0" promptText="Nome do usuário" />
+                  <Label layoutX="43.0" layoutY="42.0" text="Criar novo usuário">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <PasswordField layoutX="24.0" layoutY="126.0" promptText="Senha" />
+                  <CheckBox layoutX="24.0" layoutY="180.0" mnemonicParsing="false" text="Conta empresarial" />
+                  <Pane layoutX="-4.0" layoutY="231.0" prefHeight="244.0" prefWidth="200.0">
+                     <children>
+                        <TextField layoutX="26.0" layoutY="34.0" prefWidth="149.0" promptText="CNPJ" />
+                     </children>
+                  </Pane>
                </children>
             </Pane>
          </children>
