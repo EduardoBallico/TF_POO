@@ -26,13 +26,18 @@ public class Gerenciador {
         }*/
     }
 
-    public void logIn(String user, String pass){
-        if (user.equals("administracao@mail.com") && pass.equals("admin123")){
-            adm = true;
+    public void logIn(String email, String pass){
+        /*if (email.equals("administracao@mail.com") && pass.equals("admin123")){
+            sceneManager.setScene("admin");
         }
         else{
-            adm = false;
-        }
+            Cliente c = pesquisaPorEmail(email);
+            if(c.getSenha() == pass){
+                sceneManager.setScene("user");
+            }
+        }*/
+
+
     }
 
     public void setUsuarioAtivo(String user, String pass) {

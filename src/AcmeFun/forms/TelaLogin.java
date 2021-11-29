@@ -24,10 +24,12 @@ public class TelaLogin {
 
     @FXML
     public void logIn(ActionEvent actionEvent) {
+
+
         System.out.println("MILAGRE");
         sceneManager.switchScene("admin");
 
-        //gerenciador.logIn(inputUsername.getText(), inputPassword.getText());
+        gerenciador.logIn(inputUsername.getText(), inputPassword.getText());
         //System.out.println("Usuario fez login");
     }
 
