@@ -46,33 +46,33 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lixo.forms.TelaCliente">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="600.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
          <children>
             <Pane fx:id="PanelCriarUsuario" layoutX="1.0" layoutY="-1.0" prefHeight="478.0" prefWidth="200.0">
                <children>
-                  <TextField fx:id="inputNomeUsu" layoutX="14.0" layoutY="101.0" prefHeight="26.0" prefWidth="171.0" promptText="Nome do usuário" />
+                  <TextField layoutX="14.0" layoutY="101.0" prefHeight="26.0" prefWidth="171.0" promptText="Nome do usuário" />
                   <Label layoutX="19.0" layoutY="29.0" text="Criar novo usuário" textAlignment="CENTER">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <PasswordField fx:id="inputSenhaUsu" layoutX="14.0" layoutY="148.0" prefHeight="26.0" prefWidth="171.0" promptText="Senha" />
-                  <CheckBox fx:id="chBoxContaEmp" layoutX="14.0" layoutY="200.0" mnemonicParsing="false" text="Conta empresarial" />
-                  <Pane fx:id="paneEmpresarial" layoutY="252.0" prefHeight="212.0" prefWidth="200.0">
+                  <PasswordField layoutX="14.0" layoutY="148.0" prefHeight="26.0" prefWidth="171.0" promptText="Senha" />
+                  <CheckBox layoutX="24.0" layoutY="201.0" mnemonicParsing="false" text="Conta empresarial" />
+                  <Pane layoutY="252.0" prefHeight="212.0" prefWidth="200.0">
                      <children>
-                        <TextField fx:id="inputCNPJ" layoutX="14.0" layoutY="30.0" prefHeight="26.0" prefWidth="171.0" promptText="CNPJ" />
-                        <TextField fx:id="inputNomeFant" layoutX="14.0" layoutY="80.0" prefHeight="26.0" prefWidth="171.0" promptText="Nome Fantasia" />
-                        <Button fx:id="btnCriarContaEmp" layoutX="61.0" layoutY="143.0" mnemonicParsing="false" text="Criar conta" />
+                        <TextField layoutX="14.0" layoutY="30.0" prefHeight="26.0" prefWidth="171.0" promptText="CNPJ" />
+                        <TextField layoutX="14.0" layoutY="80.0" prefHeight="26.0" prefWidth="171.0" promptText="Nome Fantasia" />
+                        <Button layoutX="61.0" layoutY="143.0" mnemonicParsing="false" text="Criar conta" />
                      </children>
                   </Pane>
-                  <Pane fx:id="paneUsuario" layoutY="252.0" prefHeight="212.0" prefWidth="200.0" visible="false">
+                  <Pane layoutY="252.0" prefHeight="212.0" prefWidth="200.0" visible="false">
                      <children>
-                        <Button fx:id="BtnCriarContaUsu" layoutX="60.0" layoutY="149.0" mnemonicParsing="false" text="Criar conta" />
-                        <CheckBox fx:id="chBoxVinculado" layoutX="20.0" layoutY="63.0" mnemonicParsing="false" text="Vinculado a empresa?" />
-                        <TextField fx:id="inputEmpresa" layoutX="26.0" layoutY="93.0" prefWidth="149.0" promptText="Qual?" />
-                        <TextField fx:id="inputCPF" layoutX="26.0" layoutY="14.0" prefHeight="26.0" prefWidth="149.0" promptText="CPF" />
+                        <Button layoutX="60.0" layoutY="149.0" mnemonicParsing="false" text="Criar conta" />
+                        <CheckBox layoutX="20.0" layoutY="63.0" mnemonicParsing="false" text="Vinculado a empresa?" />
+                        <TextField layoutX="26.0" layoutY="93.0" prefWidth="149.0" promptText="Qual?" />
+                        <TextField layoutX="26.0" layoutY="14.0" prefHeight="26.0" prefWidth="149.0" promptText="CPF" />
                      </children>
                   </Pane>
                </children>
@@ -90,40 +90,46 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <ComboBox fx:id="cBoxTEntretenimento" layoutX="7.0" layoutY="101.0" promptText="Tipo de Entretenimento">
+                  <ComboBox layoutX="7.0" layoutY="101.0" promptText="Tipo de Entretenimento">
                      <opaqueInsets>
                         <Insets />
                      </opaqueInsets>
                   </ComboBox>
-                  <Pane fx:id="paneEpSerie" layoutY="170.0" prefHeight="305.0" prefWidth="200.0" visible="false">
+                  <Pane fx:id="PanelEpSerie" layoutY="170.0" prefHeight="305.0" prefWidth="200.0" visible="false">
                      <children>
-                        <TextField fx:id="inputSerieEp" layoutX="14.0" layoutY="100.0" prefHeight="26.0" prefWidth="171.0" promptText="Série" />
-                        <TextField fx:id="inputTempEp" layoutX="14.0" layoutY="140.0" prefHeight="26.0" prefWidth="171.0" promptText="Nº da Temporada" />
-                        <TextField fx:id="inputNumEp" layoutX="14.0" layoutY="184.0" prefHeight="26.0" prefWidth="171.0" promptText="Nº do Epsódio" />
-                        <Button fx:id="btnCadastraEP" layoutX="37.0" layoutY="248.0" mnemonicParsing="false" text="Cadastrar Episódio" />
+                        <TextField layoutX="14.0" layoutY="20.0" prefHeight="26.0" prefWidth="171.0" promptText="Título" />
+                        <TextField layoutX="14.0" layoutY="58.0" prefHeight="26.0" prefWidth="171.0" promptText="Ano de Lançamento" />
+                        <TextField layoutX="14.0" layoutY="100.0" prefHeight="26.0" prefWidth="171.0" promptText="Série" />
+                        <TextField layoutX="14.0" layoutY="140.0" prefHeight="26.0" prefWidth="171.0" promptText="Nº da Temporada" />
+                        <TextField layoutX="14.0" layoutY="184.0" prefHeight="26.0" prefWidth="171.0" promptText="Nº do Epsódio" />
+                        <Button layoutX="37.0" layoutY="248.0" mnemonicParsing="false" text="Cadastrar Episódio" />
                      </children>
                   </Pane>
-                  <Pane fx:id="paneFilme" layoutY="170.0" prefHeight="305.0" prefWidth="200.0" visible="false">
+                  <Pane fx:id="PanelFilme" layoutY="170.0" prefHeight="305.0" prefWidth="200.0" visible="false">
                      <children>
-                        <Button fx:id="btnCadastraFilme" layoutX="45.0" layoutY="178.0" mnemonicParsing="false" text="Cadastrar Filme" />
-                        <TextField fx:id="inputDuracaoFilme" layoutX="14.0" layoutY="111.0" prefHeight="26.0" prefWidth="171.0" promptText="Duração" />
+                        <TextField layoutX="14.0" layoutY="20.0" prefHeight="26.0" prefWidth="171.0" promptText="Título" />
+                        <TextField layoutX="14.0" layoutY="68.0" prefHeight="26.0" prefWidth="171.0" promptText="Ano de Lançamento" />
+                        <Button layoutX="45.0" layoutY="183.0" mnemonicParsing="false" text="Cadastrar Filme" />
+                        <TextField layoutX="14.0" layoutY="116.0" prefHeight="26.0" prefWidth="171.0" promptText="Duração" />
                      </children>
                   </Pane>
-                  <Pane fx:id="paneJogo" layoutY="170.0" prefHeight="305.0" prefWidth="200.0" visible="false">
+                  <Pane fx:id="PaneJogo" layoutY="170.0" prefHeight="305.0" prefWidth="200.0" visible="false">
                      <children>
-                        <TextField fx:id="inputNomeOriginal" layoutX="15.0" layoutY="110.0" prefHeight="26.0" prefWidth="171.0" promptText="Nome original" />
-                        <TextField fx:id="inputGenero" layoutX="14.0" layoutY="159.0" prefHeight="26.0" prefWidth="171.0" promptText="Gênero" />
-                        <Button fx:id="btnCadastraJogo" layoutX="48.0" layoutY="230.0" mnemonicParsing="false" text="Cadastrar Jogo" />
+                        <TextField layoutX="14.0" layoutY="20.0" prefHeight="26.0" prefWidth="171.0" promptText="Título" />
+                        <TextField layoutX="14.0" layoutY="65.0" prefHeight="26.0" prefWidth="171.0" promptText="Ano de Lançamento" />
+                        <TextField layoutX="15.0" layoutY="113.0" prefHeight="26.0" prefWidth="171.0" promptText="Nome original" />
+                        <TextField layoutX="14.0" layoutY="161.0" prefHeight="26.0" prefWidth="171.0" promptText="Gênero" />
+                        <Button layoutX="48.0" layoutY="230.0" mnemonicParsing="false" text="Cadastrar Jogo" />
                      </children>
                   </Pane>
-                  <Pane fx:id="paneSerie" layoutY="170.0" prefHeight="305.0" prefWidth="200.0" visible="false">
+                  <Pane fx:id="PanelSerie" layoutY="170.0" prefHeight="305.0" prefWidth="200.0" visible="false">
                      <children>
-                        <TextField fx:id="inputConclusao" layoutX="14.0" layoutY="118.0" prefHeight="26.0" prefWidth="171.0" promptText="Ano de Conclusão" />
-                        <Button fx:id="btnCadastraSerie" layoutX="46.0" layoutY="185.0" mnemonicParsing="false" text="Cadastrar Série" />
+                        <TextField layoutX="14.0" layoutY="20.0" prefHeight="26.0" prefWidth="171.0" promptText="Título" />
+                        <TextField layoutX="13.0" layoutY="72.0" prefHeight="26.0" prefWidth="171.0" promptText="Ano de Lançamento" />
+                        <TextField layoutX="14.0" layoutY="123.0" prefHeight="26.0" prefWidth="171.0" promptText="Ano de Conclusão" />
+                        <Button layoutX="46.0" layoutY="185.0" mnemonicParsing="false" text="Cadastrar Série" />
                      </children>
                   </Pane>
-                  <TextField fx:id="inputTitulo" layoutX="14.0" layoutY="188.0" prefHeight="26.0" prefWidth="171.0" promptText="Título" />
-                  <TextField fx:id="inputAno" layoutX="14.0" layoutY="233.0" prefHeight="26.0" prefWidth="171.0" promptText="Ano de Lançamento" />
                </children>
             </Pane>
             <Pane layoutX="400.0" prefHeight="478.0" prefWidth="200.0">
@@ -139,18 +145,18 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <ComboBox fx:id="cBoxMes" layoutX="8.0" layoutY="101.0" prefHeight="28.0" prefWidth="185.0" promptText="Mês desejado">
+                  <ComboBox layoutX="8.0" layoutY="101.0" prefHeight="28.0" prefWidth="185.0" promptText="Mês desejado">
                      <opaqueInsets>
                         <Insets />
                      </opaqueInsets>
                   </ComboBox>
-                  <ComboBox fx:id="cBoxAno" layoutX="8.0" layoutY="141.0" prefHeight="28.0" prefWidth="185.0" promptText="Ano desejado">
+                  <ComboBox layoutX="8.0" layoutY="141.0" prefHeight="28.0" prefWidth="185.0" promptText="Ano desejado">
                      <opaqueInsets>
                         <Insets />
                      </opaqueInsets>
                   </ComboBox>
-                  <ListView fx:id="lViewConsulta" layoutX="7.0" layoutY="224.0" prefHeight="240.0" prefWidth="185.0" />
-                  <Button fx:id="btnConsulta" layoutX="64.0" layoutY="176.0" mnemonicParsing="false" text="Consultar" />
+                  <ListView layoutX="8.0" layoutY="214.0" prefHeight="257.0" prefWidth="185.0" />
+                  <Button layoutX="64.0" layoutY="176.0" mnemonicParsing="false" text="Consultar" />
                </children>
             </Pane>
             <Pane layoutX="600.0" prefHeight="466.0" prefWidth="200.0">
@@ -166,9 +172,9 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="inputNomeArquivo" layoutX="15.0" layoutY="101.0" prefHeight="26.0" prefWidth="171.0" promptText="Nome do arquivo" />
-                  <ListView fx:id="lViewCargaDados" layoutX="8.0" layoutY="180.0" prefHeight="280.0" prefWidth="185.0" />
-                  <Button fx:id="btnSimula" layoutX="70.0" layoutY="143.0" mnemonicParsing="false" text="Simular" />
+                  <TextField layoutX="15.0" layoutY="101.0" prefHeight="26.0" prefWidth="171.0" promptText="Nome do arquivo" />
+                  <ListView layoutX="8.0" layoutY="180.0" prefHeight="292.0" prefWidth="185.0" />
+                  <Button layoutX="70.0" layoutY="143.0" mnemonicParsing="false" text="Simular" />
                </children>
             </Pane>
          </children>
