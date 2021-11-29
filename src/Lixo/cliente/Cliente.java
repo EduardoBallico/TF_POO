@@ -1,4 +1,4 @@
-package Lixo.clientes;
+package Lixo.cliente;
 
 public abstract class Cliente {
 
