@@ -1,14 +1,10 @@
 package Lixo;
 
 import Lixo.acesso.ListaAcessos;
-import Lixo.cliente.Cliente;
-import Lixo.cliente.Empresarial;
-import Lixo.cliente.Individual;
-import Lixo.cliente.ListaClientes;
+import Lixo.cliente.*;
 import Lixo.entretenimento.ListaEntretenimentos;
 import Lixo.forms.TelaAdmin;
 import Lixo.forms.TelaLogin;
-import javafx.application.Application;
 
 public class Gerenciador {
     private ListaAcessos lAcessos;
@@ -33,10 +29,10 @@ public class Gerenciador {
 
     }
 
-    public void cadastraCliente(){
+    public void cadastraCliente(String nome, email, senha, cpf){
         Cliente c;
         if (true){
-            c = new Individual();
+            c = new Individual(nome, email, senha, cpf,);
         }
         else{
             c = new Empresarial();
