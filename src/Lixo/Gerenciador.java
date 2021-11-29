@@ -23,6 +23,9 @@ public class Gerenciador {
             TelaAdmin tAdm = new TelaAdmin();
             tAdm.exibir(this);
         }
+        else{
+
+        }
     }
 
     public void setUsuarioAtivo(String user, String pass) {

@@ -1,11 +1,14 @@
 package Lixo.acesso;
 
-import Lixo.acesso.Acesso;
+import Lixo.cliente.Cliente;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 public class ListaAcessos {
 
-    private LinkedList<Acesso> acessos;
+    private ArrayList<Acesso> acessos;
 
+    public void cadastra(Acesso a){
+        acessos.add(a);
+    }
 }
