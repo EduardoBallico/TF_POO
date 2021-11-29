@@ -1,17 +1,47 @@
 package Lixo;
 
-import Lixo.clientes.Cliente;
-import Lixo.entretenimento.Entretenimento;
-
-import java.util.LinkedList;
+import Lixo.acesso.ListaAcessos;
+import Lixo.cliente.Cliente;
+import Lixo.cliente.Empresarial;
+import Lixo.cliente.Individual;
+import Lixo.cliente.ListaClientes;
+import Lixo.entretenimento.ListaEntretenimentos;
+import Lixo.forms.TelaAdmin;
+import Lixo.forms.TelaLogin;
+import javafx.application.Application;
 
 public class Gerenciador {
+    private ListaAcessos lAcessos;
+    private ListaEntretenimentos lEntretenimentos;
+    private ListaClientes lClientes;
 
-	private LinkedList<Acesso> acessos;
-	private LinkedList<Cliente> clientes;
-	private LinkedList<Entretenimento> entretenimentos;
+    private Cliente usuarioAtivo;
 
-	private BancoDeDados bancoDeDados;
-	private Autenticador autenticador;
+    public void iniciar(){
+        TelaLogin tLog = new TelaLogin();
+        tLog.exibir(this);
+    }
 
+    public void logIn(String user, String pass){
+        if (user.equals("administracao@mail.com") && pass.equals("admin123")){
+            TelaAdmin tAdm = new TelaAdmin();
+            tAdm.exibir(this);
+        }
+    }
+
+    public void setUsuarioAtivo(String user, String pass) {
+
+    }
+
+    public void cadastraCliente(){
+        Cliente c;
+        if (true){
+            c = new Individual();
+        }
+        else{
+            c = new Empresarial();
+        }
+
+        lClientes.cadastra(c);
+    }
 }

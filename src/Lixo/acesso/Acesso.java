@@ -1,6 +1,6 @@
-package Lixo;
+package Lixo.acesso;
 
-import Lixo.clientes.Cliente;
+import Lixo.cliente.Cliente;
 import Lixo.entretenimento.Entretenimento;
 
 import java.util.Date;

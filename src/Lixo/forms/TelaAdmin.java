@@ -1,5 +1,6 @@
 package Lixo.forms;
 
+import Lixo.Gerenciador;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -12,6 +13,11 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class TelaAdmin extends Application {
+
+    Gerenciador gerenciador;
+    public void setGerenciador(Gerenciador g){
+        gerenciador = g;
+    }
 
     public TextField inputNomeUsu;
     public TextField inputSenhaUsu;
@@ -54,7 +60,8 @@ public class TelaAdmin extends Application {
     public ListView<String> lViewCargaDados;
     public Button btnSimula;
 
-    public static void exibir() {
+    public void exibir(Gerenciador g) {
+        setGerenciador(g);
         launch();
     }
 

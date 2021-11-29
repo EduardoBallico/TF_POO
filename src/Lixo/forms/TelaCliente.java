@@ -1,5 +1,6 @@
 package Lixo.forms;
 
+import Lixo.Gerenciador;
 import javafx.application.*;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.CheckBox;
@@ -13,6 +14,11 @@ import java.io.IOException;
 
 public class TelaCliente extends Application {
 
+    Gerenciador gerenciador;
+    public void setGerenciador(Gerenciador g){
+        gerenciador = g;
+    }
+
     public ComboBox<String> comboCat;
     public ComboBox<String> comboFiltro;
     public TextField fieldCat;
@@ -23,7 +29,8 @@ public class TelaCliente extends Application {
     public ComboBox<String> comboCobraMes;
     public ListView<String> listCobra;
 
-    public static void exibir() {
+    public void exibir(Gerenciador g) {
+        setGerenciador(g);
         launch();
     }
 

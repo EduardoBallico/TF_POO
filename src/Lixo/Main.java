@@ -4,16 +4,20 @@ import Lixo.forms.*;
 
 public class Main {
 
-	private Gerenciador gerenciador;
+	public Gerenciador gerenciador;
 
 	public static void main(String[] args) {
-		// Login
+		Main main = new Main();
+		main.iniciar();
+		main.executar();
+	}
+
+	public void iniciar(){
+		gerenciador = new Gerenciador();
 		// carrega dados de arquivo
-		TelaCliente.exibir();
 	}
 
-	public static void iniciar(){
-
+	public void executar(){
+		gerenciador.iniciar();
 	}
-
 }
