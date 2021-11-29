@@ -1,15 +1,15 @@
 package AcmeFun;
 
-import AcmeFun.forms.SceneManager;
+import AcmeFun.forms.SceneControler;
 
 public class Main {
 
-	public SceneManager sceneManager;
+	public SceneControler sceneManager;
 	public Gerenciador gerenciador;
 
 	public static void main(String[] args) {
 		Gerenciador gerenciador = new Gerenciador();
-		SceneManager sceneManager = new SceneManager();
+		SceneControler sceneManager = new SceneControler();
 
 		sceneManager.iniciar(gerenciador);
 	}

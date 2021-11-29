@@ -22,8 +22,8 @@ public class TelaCliente{
     public void setGerenciador(Gerenciador g) {
         this.gerenciador = g;
     }
-    private SceneManager sceneManager;
-    public void setSceneManager(SceneManager s) {
+    private SceneControler sceneManager;
+    public void setSceneManager(SceneControler s) {
         this.sceneManager = s;
     }
 
