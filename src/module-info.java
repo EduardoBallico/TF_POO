@@ -2,5 +2,6 @@ module TF.POO {
     requires javafx.fxml;
     requires javafx.controls;
 
-    opens Lixo.forms;
+    opens AcmeFun.forms;
+    opens AcmeFun;
 }

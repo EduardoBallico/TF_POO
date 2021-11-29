@@ -1,7 +1,7 @@
-package Lixo.acesso;
+package AcmeFun.acesso;
 
-import Lixo.cliente.Cliente;
-import Lixo.entretenimento.Entretenimento;
+import AcmeFun.cliente.Cliente;
+import AcmeFun.entretenimento.Entretenimento;
 
 import java.util.Date;
 

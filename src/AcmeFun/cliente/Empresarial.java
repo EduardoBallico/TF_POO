@@ -1,4 +1,4 @@
-package Lixo.cliente;
+package AcmeFun.cliente;
 
 import java.util.LinkedList;
 

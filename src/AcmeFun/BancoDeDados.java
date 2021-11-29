@@ -1,4 +1,4 @@
-package Lixo;
+package AcmeFun;
 
 public class BancoDeDados {
 

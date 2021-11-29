@@ -1,7 +1,7 @@
-package Lixo.entretenimento;
+package AcmeFun.entretenimento;
 
-import Lixo.acesso.Acesso;
-import Lixo.cliente.Cliente;
+import AcmeFun.acesso.Acesso;
+import AcmeFun.cliente.Cliente;
 
 import java.util.ArrayList;
 import java.util.Calendar;

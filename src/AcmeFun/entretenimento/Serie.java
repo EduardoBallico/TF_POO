@@ -1,4 +1,4 @@
-package Lixo.entretenimento;
+package AcmeFun.entretenimento;
 
 import java.util.*;
 

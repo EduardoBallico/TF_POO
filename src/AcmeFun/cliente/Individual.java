@@ -1,4 +1,4 @@
-package Lixo.cliente;
+package AcmeFun.cliente;
 
 public class Individual extends Cliente {
 

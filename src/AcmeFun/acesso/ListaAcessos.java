@@ -1,6 +1,4 @@
-package Lixo.acesso;
-
-import Lixo.cliente.Cliente;
+package AcmeFun.acesso;
 
 import java.util.ArrayList;
 import java.util.Date;

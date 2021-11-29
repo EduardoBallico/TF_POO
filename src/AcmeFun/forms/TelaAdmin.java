@@ -1,23 +1,12 @@
-package Lixo.forms;
+package AcmeFun.forms;
 
-import Lixo.Gerenciador;
-import javafx.application.Application;
+import AcmeFun.Gerenciador;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.Pane;
-import javafx.stage.Stage;
 
-import java.io.IOException;
-
-public class TelaAdmin extends Application {
-
-    Gerenciador gerenciador;
-    public void setGerenciador(Gerenciador g){
-        gerenciador = g;
-    }
+public class TelaAdmin {
 
     public TextField inputNomeUsu;
     public TextField inputEmailUsu;
@@ -61,9 +50,13 @@ public class TelaAdmin extends Application {
     public ListView<String> lViewCargaDados;
     public Button btnSimula;
 
-    public void exibir(Gerenciador g) {
-        setGerenciador(g);
-        launch();
+    private Gerenciador gerenciador;
+    public void setGerenciador(Gerenciador g) {
+        this.gerenciador = g;
+    }
+    private SceneManager sceneManager;
+    public void setSceneManager(SceneManager s) {
+        this.sceneManager = s;
     }
 
     @FXML
@@ -76,13 +69,4 @@ public class TelaAdmin extends Application {
         //Gerenciador.();
     }
 
-    @Override
-    public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(TelaCliente.class.getResource("TelaAdmin.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 800, 460);
-
-        stage.setTitle("Cliente");
-        stage.setScene(scene);
-        stage.show();
-    }
 }
