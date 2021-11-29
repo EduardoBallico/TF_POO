@@ -29,10 +29,10 @@ public class Gerenciador {
 
     }
 
-    public void cadastraCliente(String nome, email, senha, cpf){
+    public void cadastraCliente(String nome, String email,String senha,int cpf){
         Cliente c;
         if (true){
-            c = new Individual(nome, email, senha, cpf,);
+            c = new Individual(nome, email, senha, cpf);
         }
         else{
             c = new Empresarial();
