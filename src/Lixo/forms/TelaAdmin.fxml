@@ -52,7 +52,7 @@
          <children>
             <Pane fx:id="PanelCriarUsuario" layoutX="1.0" layoutY="-1.0" prefHeight="478.0" prefWidth="200.0">
                <children>
-                  <TextField fx:id="inputNomeUsu" layoutX="14.0" layoutY="101.0" prefHeight="26.0" prefWidth="171.0" promptText="Nome do usuário" />
+                  <TextField fx:id="inputNomeUsu" layoutX="14.0" layoutY="101.0" prefHeight="26.0" prefWidth="171.0" promptText="E-mail do usuário" />
                   <Label layoutX="19.0" layoutY="29.0" text="Criar novo usuário" textAlignment="CENTER">
                      <font>
                         <Font size="20.0" />
