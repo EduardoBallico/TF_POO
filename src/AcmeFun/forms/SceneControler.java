@@ -11,23 +11,24 @@ import java.io.IOException;
 
 public class SceneControler extends Application {
 
-    private TelaCliente telaCliente;
-    private TelaAdmin telaAdmin;
-    private TelaLogin telaLogin;
+    private static TelaCliente telaCliente;
+    private static TelaAdmin telaAdmin;
+    private static TelaLogin telaLogin;
 
-    private Parent parLogin;
-    private Parent parAdmin;
-    private Parent parCliente;
+    private static Parent parLogin;
+    private static Parent parAdmin;
+    private static Parent parCliente;
 
-    private Gerenciador gerenciador;
-    private Scene activeScene;
+    private static Gerenciador gerenciador;
+    private static Scene activeScene;
 
-    public void iniciar(Gerenciador g){
+    public static void iniciar(Gerenciador g){
         gerenciador = g;
+        //gerenciador = new Gerenciador();
         launch();
     }
 
-    public void switchScene(String scene){
+    public static void switchScene(String scene){
         switch (scene){
             case "login" -> {
                 activeScene.setRoot(parLogin);
@@ -47,19 +48,16 @@ public class SceneControler extends Application {
         parLogin = (Parent) fxmlLoaderLogin.load(getClass().getResource("TelaLogin.fxml").openStream());
         telaLogin = (TelaLogin) fxmlLoaderLogin.getController();
         telaLogin.setGerenciador(gerenciador);
-        telaLogin.setSceneManager(this);
 
         FXMLLoader fxmlLoaderAdm = new FXMLLoader();
         parAdmin = (Parent) fxmlLoaderAdm.load(getClass().getResource("TelaAdmin.fxml").openStream());
         telaAdmin = (TelaAdmin) fxmlLoaderAdm.getController();
         telaAdmin.setGerenciador(gerenciador);
-        telaAdmin.setSceneManager(this);
 
         FXMLLoader fxmlLoaderCli = new FXMLLoader();
         parCliente = (Parent) fxmlLoaderCli.load(getClass().getResource("TelaCliente.fxml").openStream());
         telaCliente = (TelaCliente) fxmlLoaderCli.getController();
         telaCliente.setGerenciador(gerenciador);
-        telaCliente.setSceneManager(this);
 
         activeScene = new Scene(parLogin, 800, 460);
 
