@@ -1,6 +1,5 @@
 package Lixo.forms;
 
-import Lixo.Gerenciador;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -13,7 +12,6 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class TelaCliente extends Application {
-
 
     public TextField inputNomeUsu;
     public TextField inputSenhaUsu;
@@ -65,9 +63,14 @@ public class TelaCliente extends Application {
         //Gerenciador.CadastraUsuario();
     }
 
+    @FXML
+    public void criaEntretenimento(ActionEvent actionEvent) {
+        //Gerenciador.();
+    }
+
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(TelaCliente.class.getResource("TelaCliente.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(TelaCliente.class.getResource("TelaAdmin.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 800, 460);
 
         stage.setTitle("Cliente");

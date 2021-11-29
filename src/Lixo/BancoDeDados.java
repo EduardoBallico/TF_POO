@@ -2,11 +2,11 @@ package Lixo;
 
 public class BancoDeDados {
 
-	public void carregaDados() {
+	public static void carregaDados() {
 
 	}
 
-	public void salvaDados() {
+	public static void salvaDados() {
 
 	}
 

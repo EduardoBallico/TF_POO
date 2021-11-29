@@ -25,15 +25,15 @@ public class modeloXML extends Application {
         stage.show();
     }
 
-    public ComboBox comboCat;
-    public ComboBox comboFiltro;
+    public ComboBox<String> comboCat;
+    public ComboBox<String> comboFiltro;
     public TextField fieldCat;
-    public ListView listCat;
-    public ComboBox comboAcesso;
+    public ListView<String> listCat;
+    public ComboBox<String> comboAcesso;
     public CheckBox checkAcesso;
-    public ComboBox comboCobraAno;
-    public ComboBox comboCobraMes;
-    public ListView listCobra;
+    public ComboBox<String> comboCobraAno;
+    public ComboBox<String> comboCobraMes;
+    public ListView<String> listCobra;
 
 
     @FXML
