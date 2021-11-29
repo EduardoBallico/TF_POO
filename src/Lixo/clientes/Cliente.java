@@ -8,8 +8,14 @@ public abstract class Cliente {
 
 	private String senha;
 
-	private Empresarial empresarial;
+	public Cliente(String nome, String email, String senha){
+		this.nome = nome;
+		this.email= email;
+		this.senha = senha;
+	}
 
-	private Individual individual;
+	public String getNome() { return nome; }
+	public String getEmail() { return email; }
+	public String getSenha() { return senha; }
 
 }

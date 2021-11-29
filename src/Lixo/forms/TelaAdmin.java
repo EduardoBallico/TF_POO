@@ -14,6 +14,7 @@ import java.io.IOException;
 public class TelaAdmin extends Application {
 
     public TextField inputNomeUsu;
+    public TextField inputEmailUsu;
     public TextField inputSenhaUsu;
     public CheckBox chBoxContaEmp;
     public Pane paneEmpresarial;
