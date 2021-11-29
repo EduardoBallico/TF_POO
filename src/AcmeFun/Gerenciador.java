@@ -3,11 +3,13 @@ package AcmeFun;
 import AcmeFun.acesso.ListaAcessos;
 import AcmeFun.cliente.*;
 import AcmeFun.entretenimento.ListaEntretenimentos;
+import AcmeFun.forms.SceneControler;
 
 public class Gerenciador {
     private ListaAcessos lAcessos;
     private ListaEntretenimentos lEntretenimentos;
     private ListaClientes lClientes;
+    private SceneControler sceneControler;
 
     private Cliente usuarioAtivo;
     private boolean adm;
@@ -27,21 +29,24 @@ public class Gerenciador {
     }
 
     public void logIn(String email, String pass){
-        /*if (email.equals("administracao@mail.com") && pass.equals("admin123")){
-            sceneManager.setScene("admin");
+        if (email.equals("administracao@mail.com") && pass.equals("admin123")){
+            sceneControler.switchScene("admin");
+            usuarioAtivo = null;
         }
         else{
-            Cliente c = pesquisaPorEmail(email);
+            Cliente c = lClientes.pesquisaClientesEmail(email);
             if(c.getSenha() == pass){
-                sceneManager.setScene("user");
+                setUsuarioAtivo(c);
+                sceneControler.switchScene("user");
             }
-        }*/
-
-
+            else{
+                System.out.println("Credenciais incorretas, tente novamente.");
+            }
+        }
     }
 
-    public void setUsuarioAtivo(String user, String pass) {
-
+    public void setUsuarioAtivo(Cliente cliente) {
+        usuarioAtivo = cliente;
     }
 
     public void cadastraCliente(String nome, String email,String senha,int cpf){
