@@ -8,10 +8,10 @@ public class Main {
 	public Gerenciador gerenciador;
 
 	public static void main(String[] args) {
-		Gerenciador gerenciador = new Gerenciador();
-		SceneControler sceneManager = new SceneControler();
+		Main main = new Main();
 
-		sceneManager.iniciar(gerenciador);
+		main.gerenciador = new Gerenciador();
+		SceneControler.iniciar(main.gerenciador);
 	}
 
 }

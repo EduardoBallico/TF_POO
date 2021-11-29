@@ -17,20 +17,13 @@ public class TelaLogin {
     public void setGerenciador(Gerenciador g) {
         this.gerenciador = g;
     }
-    private SceneControler sceneManager;
-    public void setSceneManager(SceneControler s) {
-        this.sceneManager = s;
+    public Gerenciador getGerenciador() {
+        return gerenciador;
     }
 
     @FXML
     public void logIn(ActionEvent actionEvent) {
-
-
-        System.out.println("MILAGRE");
-        sceneManager.switchScene("admin");
-
         gerenciador.logIn(inputUsername.getText(), inputPassword.getText());
-        //System.out.println("Usuario fez login");
     }
 
 }

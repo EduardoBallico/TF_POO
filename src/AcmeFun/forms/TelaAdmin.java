@@ -54,14 +54,22 @@ public class TelaAdmin {
     public void setGerenciador(Gerenciador g) {
         this.gerenciador = g;
     }
-    private SceneControler sceneManager;
-    public void setSceneManager(SceneControler s) {
-        this.sceneManager = s;
-    }
 
     @FXML
     public void criaCliente(ActionEvent actionEvent) {
         //Gerenciador.CadastraUsuario();
+    }
+
+    @FXML
+    public void exibePaneEmpresaIndividual(ActionEvent actionEvent) {
+        if(chBoxContaEmp.isSelected()){
+            paneEmpresarial.setVisible(true);
+            paneUsuario.setVisible(false);
+        }
+        else{
+            paneEmpresarial.setVisible(false);
+            paneUsuario.setVisible(true);
+        }
     }
 
     @FXML
